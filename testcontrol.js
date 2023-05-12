@@ -17,6 +17,11 @@ export class HelloWorld extends LitElement {
           type: 'string',
           title: 'Who',
           description: 'Who to say hello to'
+        },
+        me: {
+          type: 'string',
+          title: 'me',
+          description: 'Who to say hello to'
         }
       }
     };
