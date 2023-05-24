@@ -3,9 +3,6 @@ import { html,LitElement} from 'https://cdn.jsdelivr.net/gh/lit/dist@2/all/lit-a
 // define the component
 export class LakeTree_GridJS extends LitElement {
 
-  // static styles = css`
-  // `
-
   static properties = {
     firstname: {type: String},
     jsonData: {type: String},
@@ -113,18 +110,13 @@ export class LakeTree_GridJS extends LitElement {
 
   render() {
     console.log("render");
-    return html`<span @click=${this.toggleName} >Hello ${this.firstname}<span/>
+    return html`
     ${this.jQueryScript()}	
     ${this.gridScript()}	
     ${this.kendoStyles()}	
     <div id="grid">this is a grid</div>
     `;
 
-  }
-
-
-  toggleName() {
-    this.firstname = 'you clicked bob';
   }
 
 }
