@@ -10,8 +10,8 @@ import { html,LitElement} from 'https://cdn.jsdelivr.net/gh/lit/dist@2/all/lit-a
 // define the component
 export class LakeTree_GridJS extends LitElement {
 
-  static styles = css`
-  `
+  // static styles = css`
+  // `
 
   static properties = {
     firstname: {type: String},
